@@ -168,6 +168,48 @@ h2 {
     margin-bottom: 30px;
 }
 
+/* Hero Badges/Highlights */
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px 25px;
+    text-align: center;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.badge-icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.badge p {
+    font-size: 0.9em;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+
+.badge strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-accent);
+}
+
 /* Bagian Produk (Galeri) */
 section {
     padding: 60px 5%;
@@ -351,6 +393,21 @@ section {
 
     .hero-content h1 {
         font-size: 2.5em;
+    }
+
+    .hero-badges {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .badge {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .badge-icon {
+        font-size: 1.5em;
+        margin-bottom: 8px;
     }
 
     .contact-form-section {
